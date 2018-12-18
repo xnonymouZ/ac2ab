@@ -9,7 +9,7 @@ var aux, isTRus;
     document.getElementById('mail').setAttribute("class", "mail fadeOutRight");
     document.getElementById('body').className = 'bg';
     player =document.querySelector('audio');
-    player.src = '/assets/audio/efa.mp3';
+    player.src = '/assets/audio/efa.mp4';
     player.type = 'audio/mp3';
     player.volume = 1;
     player.play();
