@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta name="charset" content="utf-8">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+      <title>ေတာင္းပန္လႊာ</title>
+
+      <link rel="stylesheet" href="./css/mainstyle.css">
+      <link rel="stylesheet" href="./css/animated.css">
+      <style>
+      * {
+        transition:  all 400ms ease;
+      }
+        body {
+              color: #fff;
+        }
+#hand {
+  position: relative;
+  top: 20px;
+  right: 40%;
+}
+
+        .bg {
+          display: block;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          background-image :url(/assets/img/img.jpg);
+           background-attachment: fixed;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position:  center;
+          transform: blur(2px);
+          transform: darken(2px);
+          margin: 0;
+          padding: 0;
+        }
+        .blue {
+          color: teal;
+        }
+        .shake {
+          transition:  transform ease 200ms;
+          animation: shaken 800ms;
+          animation-timing-function: ease;
+          animation-iteration-count: infinite;
+          animation-fill-mode: both
+        }
+
+        .box.start {
+          position: relative;
+          top: 80px;
+         padding: 20px 40px;
+         min-width: 320px;
+         min-heigth: 280px;
+          background-color: rgba(65,65,65,0.3);
+        }
+        @keyframes shaken {
+          0%{ transform: rotate(45deg) ; }
+          25% { transform: rotate(-45deg); }
+          100% { transform: rotate(45deg); }
+        }
+      </style>
+</head>
+
+<body class="">
+  <div class="" id="body">
+  <center>
+  <div class="maintp" style="width:fit-content;">
+    <div style="display:fixed; top: 10%; left: 20px; right:20px; width:fit-content;">
+
+      <img class="mail fadeInLeft" id="mail" width="80px" height="auto" src="./assets/img/mail.svg" alt="piece-icon">
+
+      <img id="hand" src="./assets/img/piece.png" width="80px" height="auto" class="msg hide" alt="">
+      <div class="box" id="oisofhs">
+      <h2 class="msg hide" typewrite="1" style="width:fit-content;"> သူငယ္ခ်င္း</h2>
+      <h2 class="msg hide"  typewrite="1"  style="width:fit-content;">
+        <b id="recipient" style="color: rgb(0, 193, 207); font-weight: 500;"> ေနာင္ရဲ</b>  ထံသုိ႔
+      </h2>
+
+      <h2 class="msg hide"  typewrite="1"  style="width:fit-content;"  typewrite="1" >
+        ခ်စ္သူငယ္ခ်င္း <span class="blue">ေအးခ်မ္း</span> မွ <br/>
+      </h2>
+
+      <h2 class="msg hide"  typewrite="1"  style="width:fit-content;"  typewrite="1" >
+        <span class="blue">ေတာင္းပန္ပါတယ္...</span>
+      </h2>
+</div>
+    </div>
+  </div>
+  <!-- /* End: maintp */ -->
+
+  </div>
+  <!-- /* End: content */ -->
+</center>
+
+<audio src=""></audio>
+
+<div id="yt-player" style="width:1px;height:1px;padding:0;margin:0;position:fixed;top:0;right:0">
+  <iframe width="1" height="1" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+</div>
+
+<script src="./js/initiated.js"></script>
+</div>
+</body>
+</html>
